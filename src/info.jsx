@@ -1,7 +1,6 @@
 import { Link, Navigate, useLocation } from "react-router-dom";
 import axios from "axios";
 import { useEffect, useState } from "react";
-import HTMLReactParser from 'html-react-parser'
 export default function Info(){
     const [details,setDetails] = useState([])
     const loc = useLocation(); 
@@ -20,7 +19,7 @@ export default function Info(){
     <img className='cover-img' src={details.image}/>
     <div className="desc">
         <h2>{details.title}</h2>
-    <p>{HTMLReactParser(details.description)}</p>
+    <p>{details.description}</p>
     <dir className='genre'><b>Genres:</b>
     {
         
