@@ -26,7 +26,7 @@ return (
   {
     start?<h1></h1>:
     (
-      details.length==0?<Loading />:details.map((i)=><Card details={i}/>)
+      details.length==0?<h1></h1>:details.map((i)=><Card details={i}/>)
     )
   }
   </div>
