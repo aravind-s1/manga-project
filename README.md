@@ -1,2 +1,1 @@
-"# manga-project" 
-"#reactjs-manga-project" 
+ "#reactjs-manga-project" 
