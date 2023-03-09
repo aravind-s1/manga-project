@@ -12,7 +12,7 @@ function Home(){
   setSearchtext(e.target.value)
   }
   const search= ()=>{
-  axios.get(`https://api.consumet.org/manga/mangasee123/${searchtext}`).then((res)=>{
+  axios.get(`https://api.consumet.org/manga/mangadex/${searchtext}`).then((res)=>{
     setDetails(res.data.results)
     setStart(false)
   })
